@@ -1,0 +1,46 @@
+print(int(True))
+print(int(False))
+print(bool(1))
+print(bool(0))
+
+x= 'James'
+print(x[0])
+print(x[-1])
+
+#slicing using "::"
+print(x[::2]) # for every 2 character in the string, the character is isolated out
+
+#outcome = Jms
+
+#slicing using ":"
+print(x[0:2])
+#outcome Ja
+
+y = "James" + " is hot"
+# remember to to have spacing
+print(y)
+
+z = "Bill \nis hot"
+#spacing is considered as well
+print(z)
+
+#\t = tab
+a = "Bill \tis hot"
+#outcome = Bill     is hot
+
+# \\ = \
+b = "Bill \\is hot"
+# outcome = Bill \is hot
+print(b)
+
+# r
+print(r"Michael \is hot")
+# outcome = Michael \is hot
+
+c= b.upper()
+print(c)
+
+c = b.replace("Bill", "Yi An")
+print(c)
+
+print(f"Statement: {c}")
