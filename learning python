@@ -44,3 +44,54 @@ c = b.replace("Bill", "Yi An")
 print(c)
 
 print(f"Statement: {c}")
+
+#list []
+L = ["Michael Jackson", 1, 2]
+print(L[0])
+print(L[-3])
+
+A = [1, 3, ["Akana", "Bert"], (1, "Jayce")] #list can contain other lists and tuples, aka nesting as well
+print(A[3][1][1])
+#output = a
+
+#extend can only give one argument at a time
+A.extend(["Conner", "Tim"])
+print(A)
+#output = [1, 3, ['Akana', 'Bert'], (1, 'Jayce'), 'Conner', 'Tim']
+#if argument is A.extend("Conner", "Tim") without []
+#Error is encountered
+
+#use [:] to clone a list, if the original list is altered, the clone will not follow the change
+A = ["rock", 10]
+B = A[:]
+A[0] = "stone"
+print (A)
+print (B)
+# A = ["stone", 10]
+# B = ["rock", 10]
+
+# Python Quiz (Coursera)
+# Create a list a_list, with the following elements 1, hello, [1,2,3] and True
+# Find the value stored at index 1 of a_list
+# Retrieve the elements stored at index 1, 2 and 3 of a_list
+
+a_list = [1, "hello", [1, 2, 3], "True"]
+print(a_list[1])
+print(a_list[1:])
+
+# Concatenate the following lists A = [1, 'a'] and B = [2, 1, 'd']
+A = [1, "a"]
+B = [2, 1, "d"]
+C = A + B
+print(C)
+
+Thing = {
+    "Dean" : "15", #remember to use "," to seperate each objects
+    "Karl": "15",
+    "JH": "13",
+    "11": "14",
+    "Oscar": "13.5"
+}
+
+print(Thing["11"])
+
