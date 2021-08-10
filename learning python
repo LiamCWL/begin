@@ -148,3 +148,16 @@ def habits(h):
 
 list1 = ["Read books", "Workout", "Learn python"]
 habits(list1)
+
+#try, except, finally (else can also be added)
+a = 1
+
+try:
+    b = int(input("Enter a value: "))
+    print(f"Answer: {a/b}")
+except ZeroDivisionError:
+    print("Please don't put 0")
+except ValueError:
+    print("Please enter a number")
+finally:
+    print("We're done")
