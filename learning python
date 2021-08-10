@@ -133,3 +133,18 @@ squares = ["red", "yellow", "green", "purple", "blue"]
 for square in squares:
     print(f"The colour is {square}")
 
+#functions using def
+def Stuff(stuff):
+    for i,s in enumerate(stuff):
+        print(f"Album {i+1}'s rating is {s}.")
+
+albums_rates = [10, 9, 8]
+Stuff(albums_rates)
+
+def habits(h):
+    for i, habit in enumerate(h):
+        print(f"Sequence {i+1} is {habit.lower()}.")
+
+
+list1 = ["Read books", "Workout", "Learn python"]
+habits(list1)
